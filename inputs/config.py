@@ -1,13 +1,13 @@
 CONVERT_ALL_TO_USDC = False  # convert all balances to USDC only
 
 THREADS = 1  # Enter amount of threads
-DELAY_BETWEEN_TRADE = (1, 3)  # Execute delay between every trade (Buy -> Delay -> Sell -> Buy -> Delay ...)
-DELAY_BETWEEN_DEAL = (0, 0)  # Execute delay between full trade (Buy -> Sell -> Delay -> Buy -> Sell -> Delay ...)
+DELAY_BETWEEN_TRADE = (0, 2)  # Execute delay between every trade (Buy -> Delay -> Sell -> Buy -> Delay ...)
+DELAY_BETWEEN_DEAL = (0, 2)  # Execute delay between full trade (Buy -> Sell -> Delay -> Buy -> Sell -> Delay ...)
 
-NEEDED_TRADE_VOLUME = 50000  # volume to trade, if 0 it will never stop
+NEEDED_TRADE_VOLUME = 20000  # volume to trade, if 0 it will never stop
 MIN_BALANCE_TO_LEFT = 5  # min amount to left on the balance, if 0, it is traded until the balance is equal to 0.
 
-TRADE_AMOUNT = [5, 20]  # (works nearly from +-20%), minimum (5$) and maximum amount to trade in USD, if 0 it will trade on FULL balance
+TRADE_AMOUNT = [5, 40]  # (works nearly from +-20%), minimum (5$) and maximum amount to trade in USD, if 0 it will trade on FULL balance
 ALLOWED_ASSETS = ["SOL_USDC", "PYTH_USDC", "JTO_USDC", "HNT_USDC", "MOBILE_USDC", "BONK_USDC", "WIF_USDC", "JUP_USDC", "RENDER_USDC", "WEN_USDC", "BTC_USDC", "W_USDC"]
 
 # Volatility moment
